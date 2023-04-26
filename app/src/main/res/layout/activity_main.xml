@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <com.google.android.material.button.MaterialButton
+       android:id="@+id/uiBtnBlink"
+       android:layout_width="match_parent"
+       android:layout_height="60dp"
+       android:layout_marginStart="23dp"
+       android:layout_marginEnd="23dp"
+       android:backgroundTint="#147AFC"
+       android:text="Verify Blink"
+       android:textAllCaps="false"
+       android:textColor="@color/white"
+       android:textSize="16sp"
+       android:theme="@style/Theme.MaterialComponents"
+       app:backgroundTint="#147AFC"
+       app:cornerRadius="24dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/uiBtnSmile"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#147AFC"
+        android:text="Verify Smile"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:theme="@style/Theme.MaterialComponents"
+        app:backgroundTint="#147AFC"
+        app:cornerRadius="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uiBtnBlink"
+       />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
